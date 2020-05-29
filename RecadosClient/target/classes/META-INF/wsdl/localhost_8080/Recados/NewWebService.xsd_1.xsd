@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://ServerWS/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ServerWS/">
+
+<xs:element name="cadastrar" type="tns:cadastrar"/>
+
+<xs:element name="cadastrarResponse" type="tns:cadastrarResponse"/>
+
+<xs:element name="consultarTodos" type="tns:consultarTodos"/>
+
+<xs:element name="consultarTodosResponse" type="tns:consultarTodosResponse"/>
+
+<xs:element name="removerRecados" type="tns:removerRecados"/>
+
+<xs:element name="removerRecadosResponse" type="tns:removerRecadosResponse"/>
+
+<xs:complexType name="cadastrar">
+<xs:sequence>
+<xs:element name="codigo" type="xs:int"/>
+<xs:element name="texto" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cadastrarResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="removerRecados">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mural" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mural">
+<xs:sequence>
+<xs:element name="codigo" type="xs:int"/>
+<xs:element name="texto" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removerRecadosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarTodos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="consultarTodosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mural" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,12 @@
+serverws\package-info.class
+com\mycompany\recadosclient\NewMain.class
+serverws\NewWebService_Service.class
+serverws\ConsultarTodosResponse.class
+serverws\Mural.class
+serverws\NewWebService.class
+serverws\RemoverRecadosResponse.class
+serverws\ObjectFactory.class
+serverws\Cadastrar.class
+serverws\RemoverRecados.class
+serverws\ConsultarTodos.class
+serverws\CadastrarResponse.class
